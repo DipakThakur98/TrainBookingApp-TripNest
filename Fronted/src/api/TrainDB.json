@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "ADI NDLS Express",
+    "number": "12345",
+    "from": "Ahmedabad",
+    "to": "New Delhi",
+    "departure": "08:00 AM",
+    "arrival": "08:00 PM",
+    "duration": "12h",
+    "classes": [
+      { "type": "Sleeper (SL)", "price": 500, "available": 120 },
+      { "type": "AC 3 Tier (3A)", "price": 1500, "available": 50 }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "NDLS BCT Express",
+    "number": "54321",
+    "from": "New Delhi",
+    "to": "Mumbai Central",
+    "departure": "09:00 AM",
+    "arrival": "09:00 PM",
+    "duration": "12h",
+    "classes": [
+      { "type": "Sleeper (SL)", "price": 550, "available": 100 },
+      { "type": "AC 2 Tier (2A)", "price": 2200, "available": 30 }
+    ]
+  }
+]
