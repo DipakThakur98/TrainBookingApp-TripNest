@@ -1,0 +1,27 @@
+/* Header component responsive styling */
+
+/* Ensure the grid collapses to single column on small screens */
+@media (max-width: 768px) {
+  .min-h-screen.grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Adjust image sizes for responsiveness */
+.header-image {
+  width: auto;
+  height: 6rem; /* default height */
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Ensure the right‑aligned image container flexes properly */
+.header-right-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+/* Override default image classes from JSX if needed */
+/* Example: add className="header-image" to <img> tags */

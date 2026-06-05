@@ -1,0 +1,35 @@
+/* Header background styling */
+.header-bg {
+  position: relative;
+  overflow: hidden;
+  /* background image from public folder */
+  background: url('/vandebharat1.png') center / cover no-repeat;
+  /* subtle sky‑blue shadow */
+  box-shadow: inset 0 0 80px rgba(0, 120, 255, 0.4);
+}
+
+/* Position sticker images (IRCTC, Bharat, etc.) at the top‑right corner */
+.header-bg > .header-sticker {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  z-index: 10;
+}
+
+/* light sky‑blue overlay – keep low opacity so image stays visible */
+.header-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(0,120,255,0.1));
+  z-index: 0;
+}
+
+/* ensure child content appears above overlay */
+.header-bg > * {
+  position: relative;
+  z-index: 1;
+}
